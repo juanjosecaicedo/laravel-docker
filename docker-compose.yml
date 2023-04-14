@@ -20,7 +20,7 @@ services:
     depends_on:
       - mariadb
 
-  myapp:
+  app:
     image: docker.io/bitnami/laravel:10
     restart: always
     ports:
@@ -30,7 +30,8 @@ services:
       - DB_PORT=3306
       - DB_USERNAME=laravel
       - DB_DATABASE=laravel
-    volumes:
+    volumes: 
       - './src:/app'
+      - ~/.composer:/var/www/.composer:cached
     depends_on:
       - mariadb
