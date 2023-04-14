@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "phpmyadmin url: http://localhost:8080/"
+gio open "http://localhost:8080/"
+exit
