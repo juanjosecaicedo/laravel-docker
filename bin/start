@@ -1,2 +1,3 @@
 #!/bin/bash
 docker-compose -f docker-compose.yml up -d --remove-orphans "$@"
+echo "Project running at the url: http://localhost:8000/"

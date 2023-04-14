@@ -30,7 +30,7 @@ services:
       - DB_PORT=3306
       - DB_USERNAME=laravel
       - DB_DATABASE=laravel
-    volumes: 
+    volumes:
       - './src:/app'
       - ~/.composer:/var/www/.composer:cached
     depends_on:
